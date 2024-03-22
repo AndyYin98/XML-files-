@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone Type="Toll-Free">800-937-8461</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E.7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel>
+		<Name>Grand Pacific Hotel</Name>
+		<Phone>555-232-1122</Phone>
+		<Address NearestAirport="Lakeview International">
+			<Number>88</Number>
+			<Street>Lakeshore Blvd</Street>
+			<City>Lakeview</City>
+			<State>ON</State>
+			<Zip>L5B 4T1</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="3.8">
+		<Name>Riverfront Inn</Name>
+		<Phone>555-827-9000</Phone>
+		<!-- Added missing Phone element -->
+		<Address NearestAirport="Greenwood Regional">
+			<Number>220</Number>
+			<Street>Riverside Drive</Street>
+			<City>Greenwood</City>
+			<State>MS</State>
+			<Zip>38930</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="5.0">
+		<Name>Plaza Luxe</Name>
+		<!-- Removed the additional Name element -->
+		<Phone>555-453-7790</Phone>
+		<Address NearestAirport="Metro Capital">
+			<Number>771</Number>
+			<Street>5th Avenue</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10022</Zip>
+		</Address>
+	</Hotel>
+	<!-- ... other hotel entries (corrected as needed) ... -->
+</Hotels>
