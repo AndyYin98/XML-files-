@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<!-- Error (1): Incorrect root element name -->
+
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
+		<!-- Error (3): Missing a Phone element, thus the second phone number is intentionally omitted -->
 		<Phone>480-968-8885</Phone>
-		<Phone Type="Toll-Free">800-937-8461</Phone>
 		<Address NearestAirport="Sky Harbor">
 			<Number>11</Number>
 			<Street>E.7th St</Street>
@@ -12,40 +14,34 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
+
 	<Hotel>
-		<Name>Grand Pacific Hotel</Name>
-		<Phone>555-232-1122</Phone>
-		<Address NearestAirport="Lakeview International">
-			<Number>88</Number>
-			<Street>Lakeshore Blvd</Street>
-			<City>Lakeview</City>
-			<State>ON</State>
-			<Zip>L5B 4T1</Zip>
+		<Name>Grand Park Hotel</Name>
+		<Phone>312-555-0198</Phone>
+		<Address> </Address>
+		<!-- Error (4): Missing the closing tag for the Address element -->
+		<Number>200</Number>
+		<Street>S Michigan Ave</Street>
+		<City>Chicago</City>
+		<State>IL</State>
+		<Zip>60604</Zip>
+		<!-- Error (2): Missing the NearestAirport attribute -->
+	</Hotel>
+
+	<Hotel>
+		<Name>Seaside Resort</Name>
+		<!-- Error (5): Two names provided for one of the hotels -->
+		<Name>Erroneous Name</Name>
+		<Address NearestAirport="Miami International">
+			<Number>123</Number>
+			<Street>Ocean Drive</Street>
+			<City>Miami Beach</City>
+			<State>FL</State>
+			<Zip>33139</Zip>
 		</Address>
 	</Hotel>
-	<Hotel Rating="3.8">
-		<Name>Riverfront Inn</Name>
-		<Phone>555-827-9000</Phone>
-		<!-- Added missing Phone element -->
-		<Address NearestAirport="Greenwood Regional">
-			<Number>220</Number>
-			<Street>Riverside Drive</Street>
-			<City>Greenwood</City>
-			<State>MS</State>
-			<Zip>38930</Zip>
-		</Address>
-	</Hotel>
-	<Hotel Rating="5.0">
-		<Name>Plaza Luxe</Name>
-		<!-- Removed the additional Name element -->
-		<Phone>555-453-7790</Phone>
-		<Address NearestAirport="Metro Capital">
-			<Number>771</Number>
-			<Street>5th Avenue</Street>
-			<City>New York</City>
-			<State>NY</State>
-			<Zip>10022</Zip>
-		</Address>
-	</Hotel>
-	<!-- ... other hotel entries (corrected as needed) ... -->
-</Hotels>
+
+	<!-- Additional Hotel entries would follow, each with their own potential errors -->
+
+</Hotel>
+<!-- Error (1) continued: Incorrect closing tag due to incorrect root element -->
