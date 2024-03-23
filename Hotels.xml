@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<!-- Example from the diagram -->
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
-		<Phone Type="Toll-Free">800-937-8461</Phone>
+		<Phone>800-937-8461</Phone>
 		<Address NearestAirport="Sky Harbor">
 			<Number>11</Number>
 			<Street>E.7th St</Street>
@@ -12,41 +13,146 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
+
 	<!-- Additional hotel entries -->
+	<!-- Real hotel data should be used with permission or as per data use policies -->
+	<Hotel Rating="4.5">
+		<Name>Grand Park Hotel</Name>
+		<Phone>312-555-0198</Phone>
+		<Address NearestAirport="O'Hare International">
+			<Number>200</Number>
+			<Street>S Michigan Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60604</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Seaside Resort</Name>
+		<Phone>305-555-7890</Phone>
+		<Address NearestAirport="Miami International">
+			<Number>123</Number>
+			<Street>Ocean Drive</Street>
+			<City>Miami Beach</City>
+			<State>FL</State>
+			<Zip>33139</Zip>
+		</Address>
+	</Hotel>
+
 	<Hotel Rating="3.8">
-		<Name>Grand Pacific Hotel</Name>
-		<Phone>555-232-1122</Phone>
-		<Address NearestAirport="Lakeview International">
-			<Number>88</Number>
-			<Street>Lakeshore Blvd</Street>
-			<City>Lakeview</City>
-			<State>ON</State>
-			<Zip>L5B 4T1</Zip>
+		<Name>Lakeside Inn</Name>
+		<Phone>206-555-0123</Phone>
+		<Address NearestAirport="Seattle-Tacoma International">
+			<Number>789</Number>
+			<Street>Lakeview Blvd</Street>
+			<City>Seattle</City>
+			<State>WA</State>
+			<Zip>98178</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Mountain View Lodge</Name>
+		<Address NearestAirport="Denver International">
+			<Number>456</Number>
+			<Street>Highland Rd</Street>
+			<City>Denver</City>
+			<State>CO</State>
+			<Zip>80203</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.9">
+		<Name>The Royal Grand</Name>
+		<Phone>212-555-1234</Phone>
+		<Address NearestAirport="LaGuardia Airport">
+			<Number>1</Number>
+			<Street>Central Park S</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10019</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.3">
+		<Name>Desert Rose Resort</Name>
+		<Phone>702-555-6789</Phone>
+		<Address NearestAirport="McCarran International">
+			<Number>5051</Number>
+			<Street>Duke Ellington Way</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89119</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="5.0">
+		<Name>Empire Hotel</Name>
+		<Phone>415-555-0000</Phone>
+		<Address NearestAirport="San Francisco International">
+			<Number>600</Number>
+			<Street>Stockton St</Street>
+			<City>San Francisco</City>
+			<State>CA</State>
+			<Zip>94108</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Harborfront Inn</Name>
+		<Phone>617-555-1212</Phone>
+		<Address NearestAirport="Logan International">
+			<Number>70</Number>
+			<Street>Rowes Wharf</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02110</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>The Southern Charm</Name>
+		<Address NearestAirport="Hartsfield-Jackson Atlanta International">
+			<Number>375</Number>
+			<Street>Peachtree Hills Ave NE</Street>
+			<City>Atlanta</City>
+			<State>GA</State>
+
+			<Zip>30305</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.7">
+		<Name>Cityscape Hotel</Name>
+		<Phone>214-555-7891</Phone>
+		<Address NearestAirport="Dallas Love Field">
+			<Number>2500</Number>
+			<Street>Victory Ave</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75219</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Riverside Retreat</Name>
+		<Address NearestAirport="Portland International">
+			<Number>101</Number>
+			<Street>East Ave</Street>
+			<City>Portland</City>
+			<State>OR</State>
+			<Zip>97217</Zip>
 		</Address>
 	</Hotel>
 	<Hotel>
-		<Name>Riverfront Inn</Name>
-		<Phone>555-827-9000</Phone>
-		<Phone Type="Toll-Free">800-123-8000</Phone>
-		<Address NearestAirport="Greenwood Regional">
-			<Number>220</Number>
-			<Street>Riverside Drive</Street>
-			<City>Greenwood</City>
-			<State>MS</State>
-			<Zip>38930</Zip>
+		<Name>Historic Colonial Hotel</Name>
+		<Phone>504-555-2345</Phone>
+		<Address NearestAirport="Louis Armstrong New Orleans International">
+			<Number>539</Number>
+			<Street>Chartres St</Street>
+			<City>New Orleans</City>
+			<State>LA</State>
+			<Zip>70130</Zip>
 		</Address>
 	</Hotel>
-	<!-- ... other hotel entries ... -->
-	<Hotel Rating="5.0">
-		<Name>Plaza Luxe</Name>
-		<Phone>555-453-7790</Phone>
-		<Address NearestAirport="Metro Capital">
-			<Number>771</Number>
-			<Street>5th Avenue</Street>
-			<City>New York</City>
-			<State>NY</State>
-			<Zip>10022</Zip>
-		</Address>
-	</Hotel>
-	<!-- ... and so on until you have 10 entries ... -->
 </Hotels>
